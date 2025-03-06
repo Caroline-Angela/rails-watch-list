@@ -1,0 +1,7 @@
+<h1>Bookmark</h1>
+<%= simple_form_for @bookmark do |f| %>
+  <%= f.input :name %>
+  <%= f.association :movie %>
+  <%# <%= f.association :list % --not needed- that can be entered via params - address>
+  <%= f.button :submit %>
+<% end %>
